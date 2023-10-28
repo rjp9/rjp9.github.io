@@ -3,16 +3,12 @@
     margin: 0;
 }
 
-/* body {
-    width: 100vh;
-    height: 100vh;
-} */
-
 body {
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: rgb(226 232 240);
+    overflow-y: scroll;
 }
 
 button {
@@ -33,7 +29,7 @@ button:hover {
 }
 
 #main-container {
-    padding: 0 4rem;
+    padding: 2rem 4rem;
 }
 
 #main-text {
@@ -42,6 +38,10 @@ button:hover {
 
 #main-buttons {
     flex-direction: column;
+
+    > a > button{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 700px) {
