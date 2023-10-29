@@ -8,7 +8,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: rgb(226 232 240);
-    overflow-y: scroll;
+    /* background-color: rgb(168, 0, 168, 0.6);; */
+    /* overflow-y: scroll; */
 }
 
 button {
@@ -18,9 +19,9 @@ button {
     border-radius: 0.5rem;
     cursor: pointer;
     text-align: center;
-    font-size: x-large;
+    font-size: 1.5rem;
     color: white;
-    min-width: 150px;
+    min-width: 200px;
 }
 
 button:hover {
@@ -29,11 +30,16 @@ button:hover {
 }
 
 #main-container {
-    padding: 2rem 4rem;
+    padding: 0rem 2rem;
 }
 
 #main-text {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    /* background: rgb(168, 0, 168, 0.1); */
+    /* padding: 1rem 2rem; */
+    border-radius: 0.5rem;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 #main-buttons {
@@ -41,6 +47,20 @@ button:hover {
 
     > a > button{
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #main-text {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 2rem;
+    }
+
+    #main-container {
+        padding: 2rem 4rem;
     }
 }
 
@@ -57,4 +77,3 @@ button:hover {
         flex-direction: row;
     }
 }
-
